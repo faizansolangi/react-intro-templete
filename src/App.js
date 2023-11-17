@@ -1,20 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Projects from './components/Projects';
-import Reviews from './components/Reviews';
-import contacts from './components/Contact';
-import footer from './components/Footer';
+import {BuyerReview, SellerReview} from './components/Reviews';
+import Contacts from './components/Contact';
+import Footer from './components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 function App() {
   return (
-    <div className="App">
-      <header />
-      <heroSection />
-      <projects />
-      <reviews />
-      <contact />
+    <div>
+      <Header />
+      <HeroSection />
+      <Projects />
+
+      <Tabs
+      defaultActiveKey="profile"
+      id="uncontrolled-tab-example"
+      className="mb-3">
+
+      <Tab eventKey="home" title="Buyer Review">
+        <BuyerReview />
+      </Tab>
+      <Tab eventKey="profile" title="Seller Review">
+        <SellerReview />
+      </Tab>
+    </Tabs>
+
+      <Reviews />
+      <Contact />
+      <Footer />
     </div>
   );
 }

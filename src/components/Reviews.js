@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const BuyerReview = () => {
+export const BuyerReview = () => {
   return (
     <div>
       <h3>Buyer's Review</h3>
@@ -11,7 +11,7 @@ const BuyerReview = () => {
   );
 };
 
-const SellerReview = () => {
+export const SellerReview = () => {
   return (
     <div>
       <h3>Seller's Review</h3>
@@ -19,15 +19,3 @@ const SellerReview = () => {
     </div>
   );
 }
-
-const Reviews = () => {
-  return (
-    <div>
-      <h2>Product Reviews</h2>
-      <BuyerReview />
-      <SellerReview />
-    </div>
-  );
-}
-
-export default Reviews;

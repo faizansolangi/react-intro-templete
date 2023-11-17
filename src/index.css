@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.project-section{
+  background-color: antiquewhite;
+  margin-top: 4rem;
+}
